@@ -84,10 +84,12 @@ Tab:AddButton({
   	end    
 })
 
-local Tab = Window:MakeTab({
-	Name = "Nosso Discord",
-	Icon = "rbxassetid://1461403871",
-	PremiumOnly = false
+Tab:AddButton({
+	Name = "Copiar Key YUTA HUB V2",
+	Callback = function()
+	setclipboard("V2LEvuL7Bx3Ah!ES2")
+	toclipboard("V2LEvuL7Bx3Ah!ES2")
+  	end    
 })
 
 OrionLib:Init()
