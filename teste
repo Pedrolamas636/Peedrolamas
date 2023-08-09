@@ -1,5 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Hub Key System", HidePremium = false, SaveConfig = true, IntroEnable = false})
+
 OrionLib:MakeNotification({
 	Name = "Sistema De Key",
 	Content = "Olá "..Player.Name.." ",
@@ -140,6 +142,57 @@ Tab:AddButton({
   	end    
 })
 end
+
+function CorrectKeyNotification()
+	OrionLib:MakeNotification({
+	Name = "Key Correta!",
+	Content = "Voce colocou a key certa!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+end
+
+function IncorrectKeyNotification()
+	OrionLib:MakeNotification({
+	Name = "Key Incorreta!",
+	Content = "Voce colocou a key errada!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+end
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://221748793",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		Peedrolamas.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Checar Key",
+	Callback = function()
+    	if Peedrolamas.KeyInput == Peedrolamas.Key then
+	    MakeScriptHub()
+		CorrectKeyNotification()
+		else
+			IncorrectKeyNotification()
+		end
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Pegar Key!",
+	Icon = "rbxassetid://221748793",
+	PremiumOnly = false
+})
 
 Tab:AddButton({
 	Name = "Clique aqui para copiar o link!",
