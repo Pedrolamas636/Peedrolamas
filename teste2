@@ -89,3 +89,5 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://1461403871",
 	PremiumOnly = false
 })
+
+OrionLib:Init()
