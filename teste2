@@ -6,3 +6,86 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+ 
+Tab:AddButton({
+	Name = "Yuto Hub",
+	Callback = function()
+	setclipboard("V2LEvuL7Bx3Ah!ES2")
+	toclipboard("V2LEvuL7Bx3Ah!ES2")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/afss"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Platinium Hub",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Platinium Hub",
+	Content = "Aproveite o Script!!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Loader/main/PlatiniumLoader"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Zer0 Hub",
+	Callback = function()
+	setclipboard("https://zer0hub.com/")
+	toclipboard("https://zer0hub.com/")
+	OrionLib:MakeNotification({
+	Name = "Zer0 Hub",
+	Content = "Aproveite o Script!!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/MainScript.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "New Dupe",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Dupe Ativado.",
+	Content = "Aproveite!!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sandwichk/RobloxScripts/main/Scripts/BadWare/Dupe/AFSim", true))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Blox Fruits",
+	Icon = "rbxassetid://11348590078",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Mukuro Hub",
+	Callback = function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Keys",
+	Icon = "rbxassetid://221748793",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Copiar Key Platinium Hub",
+	Callback = function()
+	setclipboard("cE6eX0bT4eA3rA4y")
+	toclipboard("cE6eX0bT4eA3rA4y")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Nosso Discord",
+	Icon = "rbxassetid://1461403871",
+	PremiumOnly = false
+})
